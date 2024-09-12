@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Youtube Clone Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a YouTube clone, aiming to replicate the core functionalities of YouTube such as video search, video playback, and more, providing a similar user experience to YouTube's platform.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+1. **Home Page:**
+ Display a list of top videos.
 
-### `npm start`
+2. **Navigation Panel:**
+ Navigation links to different sections: Home, Shorts, Trending, etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Search Bar:**
+ Search for any video on YouTube through the RapidAPI Database and play it directly within the app.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **Responsive Design:**
+ Ensure the website is responsive across different devices using breakpoints.
 
-### `npm test`
+## Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### React: 
+- Frontend library used to build the user interface.
 
-### `npm run build`
+### Tailwind CSS: 
+- For styling the app with a focus on utility-first CSS, enabling rapid customization and responsive design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Axios: 
+- For handling API requests, ensuring smooth interaction with the YouTube API via RapidAPI.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### RapidAPI: 
+- Used to fetch video data, search results, and other relevant YouTube statistics.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### HTML: 
+- with flexbox/grid for layout
 
-### `npm run eject`
+## Demo
+[https://freyashingala.github.io/youtube-clone](https://freyashingala.github.io/youtube-clone/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation and Setup
+  1. Clone the repository:
+      ```
+      git clone "https://github.com/freyashingala/youtube-clone" your_repo_name
+      cd youtube-clone
+      ```
+  2. Install the necessary dependencies:
+      ```
+     npm install
+      ```
+  3. Create a `.env` file and add your RapidAPI key:
+     ```
+     REACT_APP_RAPIDAPI_KEY=your_rapidapi_key
+     ```
+  4. Start the development server:
+     ```
+     npm start
+     ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app uses the YouTube Data API through RapidAPI to fetch the following information:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Video search results
+- Video playback links
+- Detailed video statistics (views, likes, subscribers, etc.)
+- Related videos
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This project offers various features such as:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Search Videos: 
+- Allows users to search for videos and display relevant results.
 
-### Code Splitting
+### 2. Video Playback: 
+- Users can watch videos directly within the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 3. Detailed Video Info: 
+- Displays additional information such as View count, Like count, Number of subscribers, Related videos
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### 4. Responsive Design: 
+- The app is fully responsive, test it by using it across devices—desktops, tablets, and mobile.
