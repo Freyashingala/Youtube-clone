@@ -1,8 +1,8 @@
 import React from "react";
 
 import { AiFillHome, AiOutlineFlag, AiOutlineLike } from "react-icons/ai";
-import { MdLocalFireDepartment, MdLiveTv, MdOutlineShoppingBag, MdPodcasts, MdOutlinePlaylistPlay, MdOutlineHistory, MdAccessTime } from "react-icons/md";
-import { CgMusicNote } from "react-icons/cg";
+import { MdLocalFireDepartment, MdOutlineShoppingBag, MdPodcasts, MdOutlinePlaylistPlay, MdOutlineHistory, MdAccessTime } from "react-icons/md";
+import { CgMusicNote, CgMediaLive } from "react-icons/cg";
 import { FiFilm } from "react-icons/fi";
 import { IoGameControllerSharp } from "react-icons/io5";
 import { ImNewspaper } from "react-icons/im";
@@ -27,7 +27,7 @@ export const categories = [
     { name: "Shopping", icon: <MdOutlineShoppingBag />, type: "explore" },
     { name: "Music", icon: <CgMusicNote />, type: "explore" },
     { name: "Films", icon: <FiFilm />, type: "explore" },
-    { name: "Live", icon: <MdLiveTv />, type: "explore" },
+    { name: "Live", icon: <CgMediaLive />, type: "explore" },
     { name: "Gaming", icon: <IoGameControllerSharp />, type: "explore" },
     { name: "News", icon: <ImNewspaper />, type: "explore" },
     { name: "Sports", icon: <GiDiamondTrophy />, type: "explore" },
