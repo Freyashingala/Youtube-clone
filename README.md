@@ -18,20 +18,20 @@ This project is a YouTube clone, aiming to replicate the core functionalities of
 
 ## Tech Stack
 
-### React: 
-- Frontend library used to build the user interface.
+ **React:** 
+ Frontend library used to build the user interface.
 
-### Tailwind CSS: 
-- For styling the app with a focus on utility-first CSS, enabling rapid customization and responsive design.
+**Tailwind CSS:** 
+ For styling the app with a focus on utility-first CSS, enabling rapid customization and responsive design.
 
-### Axios: 
-- For handling API requests, ensuring smooth interaction with the YouTube API via RapidAPI.
+**Axios:**
+ For handling API requests, ensuring smooth interaction with the YouTube API via RapidAPI.
 
-### RapidAPI: 
-- Used to fetch video data, search results, and other relevant YouTube statistics.
+**RapidAPI:** 
+ Used to fetch video data, search results, and other relevant YouTube statistics.
 
-### HTML: 
-- with flexbox/grid for layout
+**HTML:**
+ with flexbox/grid for layout
 
 ## Demo
 [https://freyashingala.github.io/youtube-clone](https://freyashingala.github.io/youtube-clone/)
