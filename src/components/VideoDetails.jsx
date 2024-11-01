@@ -63,7 +63,7 @@ const VideoDetails = () => {
                                 <div className="flex h-11 w-11 rounded-full overflow-hidden">
                                     <img
                                         className="h-full w-full object-cover"
-                                        src={video?.author?.avatar[0]?.url}
+                                        src={video?.author?.avatar?.url}
                                     />
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ const VideoDetails = () => {
                             <div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15]">
                                 <AiOutlineLike className="text-xl text-white mr-2" />
                                 {`${abbreviateNumber(
-                                    video?.stats?.views,
+                                    video?.stats?.likes,
                                     2
                                 )} Likes`}
                             </div>
