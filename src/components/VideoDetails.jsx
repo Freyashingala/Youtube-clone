@@ -11,8 +11,8 @@ import { Context } from "../context/contextApi";
 import SuggestionVideoCard from "./SuggestionVideoCard";
 
 const VideoDetails = () => {
-    const [video, setVideo] = useState();
-    const [relatedVideos, setRelatedVideos] = useState();
+    const [video, setVideo] = useState({});
+    const [relatedVideos, setRelatedVideos] = useState([]);
     const { id } = useParams();
     const { setLoading } = useContext(Context);
 
@@ -60,12 +60,12 @@ const VideoDetails = () => {
                     <div className="flex justify-between flex-col md:flex-row mt-4">
                         <div className="flex">
                             <div className="flex items-start">
-                                <div className="flex h-11 w-11 rounded-full overflow-hidden">
-                                    <img
-                                        className="h-full w-full object-cover"
-                                        src={video?.author?.avatar[0]?.url}
-                                    />
-                                </div>
+                            <div className="flex h-9 w-9 rounded-full overflow-hidden">
+                            <img
+                                className="h-full w-full object-cover"
+                                src={video?.author?.avatar?.url}
+                            />
+                            </div>
                             </div>
                             <div className="flex flex-col ml-3">
                                 <div className="text-white text-md font-semibold flex items-center">
@@ -84,14 +84,14 @@ const VideoDetails = () => {
                             <div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15]">
                                 <AiOutlineLike className="text-xl text-white mr-2" />
                                 {`${abbreviateNumber(
-                                    video?.stats?.views,
+                                    video?.stats?.likes || 0,
                                     2
                                 )} Likes`}
                             </div>
                             <div className="flex items-center justify-center h-11 px-6 rounded-3xl bg-white/[0.15] ml-4">
                             <MdLiveTv className="text-xl text-white mr-2" />
                                 {`${abbreviateNumber(
-                                    video?.stats?.views,
+                                    video?.stats?.views || 0,
                                     2
                                 )} Views`}
                             </div>
